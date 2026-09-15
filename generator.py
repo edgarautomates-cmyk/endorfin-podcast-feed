@@ -94,7 +94,7 @@ def _yt_json(url: str, yt_dlp: str = "yt-dlp") -> dict[str, Any]:
         "--no-warnings",
         "--skip-download",
         "--extractor-args",
-        "youtube:player_client=android,tv_embedded",
+        "youtube:player_client=tv_embedded",
         url,
     ]
     result = subprocess.run(command, check=False, capture_output=True, text=True)
