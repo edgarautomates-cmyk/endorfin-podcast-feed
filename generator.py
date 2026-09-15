@@ -87,7 +87,16 @@ def validate_feed(feed: dict[str, Any]) -> None:
 
 
 def _yt_json(url: str, yt_dlp: str = "yt-dlp") -> dict[str, Any]:
-    command = [yt_dlp, "--dump-single-json", "--flat-playlist", "--no-warnings", "--skip-download", url]
+    command = [
+        yt_dlp,
+        "--dump-single-json",
+        "--flat-playlist",
+        "--no-warnings",
+        "--skip-download",
+        "--extractor-args",
+        "youtube:player_client=android,tv_embedded",
+        url,
+    ]
     result = subprocess.run(command, check=False, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(f"yt-dlp failed for {url}: {result.stderr[-500:]}")
