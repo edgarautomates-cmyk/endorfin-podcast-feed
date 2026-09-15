@@ -23,6 +23,24 @@ MAX_EPISODES = 50
 def parse_title(title: str) -> tuple[str, str]:
     """Split only high-confidence guest markers; otherwise preserve title."""
     title = re.sub(r"\s+", " ", title).strip()
+    name_word = r"[^\W\d_]+(?:[-'][^\W\d_]+)*\.?"
+
+    def looks_like_names(value: str) -> bool:
+        people = re.split(r"\s+(?:un|&|and)\s+|,\s*", value.strip(), flags=re.IGNORECASE)
+        if not 1 <= len(people) <= 3:
+            return False
+        for person in people:
+            words = re.findall(name_word, person.strip().rstrip("."), flags=re.UNICODE)
+            if not 2 <= len(words) <= 3 or not all(word[0].isupper() for word in words):
+                return False
+        return True
+
+    for separator in (" I ", " | "):
+        if separator in title:
+            prefix, suffix = title.rsplit(separator, 1)
+            if prefix and looks_like_names(suffix):
+                return prefix.rstrip(), suffix.strip()
+
     patterns = [
         r"\s+(?:\||[-–—])\s+(?:with|w/|featuring|feat\.?|ft\.?)\s+(.+)$",
         r"\s+(?:with|w/|featuring|feat\.?|ft\.?)\s+(.+)$",
@@ -33,7 +51,13 @@ def parse_title(title: str) -> tuple[str, str]:
             return title[: match.start()].rstrip(" |-|–—"), match.group(1).strip()
     match = re.search(r"\s+[-–—]\s+([A-Z][\w .'-]{2,80})$", title)
     if match:
-        return title[: match.start()].rstrip(), match.group(1).strip()
+        suffix = match.group(1).strip()
+        if looks_like_names(suffix):
+            return title[: match.start()].rstrip(), suffix
+
+    match = re.search(r"\.\s+(.+)$", title)
+    if match and looks_like_names(match.group(1)):
+        return title[: match.start() + 1].rstrip(), match.group(1).strip().rstrip(".")
     return title, ""
 
 
@@ -87,7 +111,10 @@ def merge_entries(
     rss = {item.get("id") or item.get("youtubeId"): item for item in rss_entries}
     episodes: list[dict[str, Any]] = []
     seen: set[str] = set()
-    for flat in videos_tab:
+    # The channel tab is newest-first. Inspect one boundary item so a feed with
+    # an excluded item in the window can still retain its 49th current episode,
+    # but fail closed for malformed entries in the first MAX_EPISODES candidates.
+    for position, flat in enumerate(videos_tab[: MAX_EPISODES + 1]):
         video_id = flat.get("id") or flat.get("youtubeId")
         if not isinstance(video_id, str) or _excluded(flat, excluded_ids, excluded_playlist_id) or video_id in seen:
             continue
@@ -96,6 +123,8 @@ def merge_entries(
         recent = rss.get(video_id, {})
         date = _optional_date(flat.get("upload_date")) or _optional_date(old.get("date")) or _optional_date(recent.get("upload_date"))
         if not date:
+            if position >= MAX_EPISODES:
+                continue
             raise RuntimeError(f"new videos-tab item {video_id} has no trustworthy date")
         title = str(flat.get("title") or recent.get("title") or old.get("title") or "").strip()
         clean_title, guests = parse_title(title)
@@ -107,6 +136,8 @@ def merge_entries(
             "thumb": _https(str(flat.get("thumbnail") or recent.get("thumbnail") or old.get("thumb") or "")),
             "listTitle": clean_title,
         })
+        if len(episodes) == MAX_EPISODES:
+            break
     episodes.sort(key=lambda item: (item["date"], item["youtubeId"]), reverse=True)
     return {"channelUrl": CHANNEL_URL, "episodes": episodes[:MAX_EPISODES]}
 
@@ -203,15 +234,8 @@ def main() -> None:
     parser.add_argument("--excluded-playlist", default=DEFAULT_EXCLUDED_PLAYLIST)
     parser.add_argument("--yt-dlp", default="yt-dlp")
     args = parser.parse_args()
-    previous_path = args.output.with_name("feed.previous.json")
-    prior = json.loads(previous_path.read_text(encoding="utf-8")) if previous_path.exists() else {"episodes": []}
-    try:
-        feed = retrieve_entries(args.channel_url, args.excluded_playlist, args.yt_dlp, prior)
-    except RuntimeError as exc:
-        if "no trustworthy date" in str(exc):
-            print(f"No feed replacement: {exc}")
-            return
-        raise
+    prior = json.loads(args.output.read_text(encoding="utf-8")) if args.output.exists() else {"episodes": []}
+    feed = retrieve_entries(args.channel_url, args.excluded_playlist, args.yt_dlp, prior)
     write_feed_atomically(args.output, feed)
     print(f"Generated {len(feed['episodes'])} episodes in {args.output}")
 

@@ -1,4 +1,5 @@
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -11,6 +12,7 @@ from generator import (
     validate_feed,
     write_feed_atomically,
 )
+import generator
 
 
 CHANNEL_URL = "https://www.youtube.com/@endorfinworld/videos"
@@ -20,6 +22,29 @@ PLAYLIST_ID = "PL758Jqgz2qfiE9O7F4ONeG8GBr8-RwruO"
 def test_parse_title_extracts_guest_from_deterministic_patterns():
     assert parse_title("Endorfin Podcast #12 | with Jane Doe") == ("Endorfin Podcast #12", "Jane Doe")
     assert parse_title("Endorfin Podcast — John Smith") == ("Endorfin Podcast", "John Smith")
+
+
+def test_parse_title_handles_actual_latvian_channel_patterns():
+    assert parse_title("Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek? I Vita Solo, Lelde Matroze") == (
+        "Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek?",
+        "Vita Solo, Lelde Matroze",
+    )
+    assert parse_title("Kāpēc vientulība pieaug? I Juris Grave un Rita Grīnberga") == (
+        "Kāpēc vientulība pieaug?",
+        "Juris Grave un Rita Grīnberga",
+    )
+    assert parse_title("40 skolotāji piecēlās pret vienu skolnieku! Šodien pasaule mācās no viņa | Raimonds Elbakjans") == (
+        "40 skolotāji piecēlās pret vienu skolnieku! Šodien pasaule mācās no viņa",
+        "Raimonds Elbakjans",
+    )
+
+
+def test_parse_title_only_splits_sentence_dot_for_strong_name_suffix():
+    assert parse_title("Saruna par drosmi. Vita Solo") == ("Saruna par drosmi.", "Vita Solo")
+    assert parse_title("Šis ir parasts teikums. Kāpēc mēs baidāmies") == (
+        "Šis ir parasts teikums. Kāpēc mēs baidāmies",
+        "",
+    )
 
 
 def test_parse_title_leaves_uncertain_guest_blank():
@@ -67,6 +92,41 @@ def test_undateable_new_videos_tab_item_fails_closed():
     videos = [{"id": "new", "title": "New item"}]
     with pytest.raises(RuntimeError, match="trustworthy date"):
         merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID)
+
+
+def test_merge_stops_after_50_candidates_before_old_undateable_item():
+    videos = [{"id": "music", "title": "Live set", "upload_date": "20260101", "duration": 2400}] + [
+        {"id": f"episode-{i}", "title": f"Episode {i}", "upload_date": f"2026{(i // 28) + 1:02d}{(i % 28) + 1:02d}"}
+        for i in range(49)
+    ] + [
+        {"id": "Zq-7jLNq0o8", "title": "Old item without date"},
+        {"id": "episode-50", "title": "Outside candidate window", "upload_date": "20240101"},
+    ]
+    feed = merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID)
+    assert len(feed["episodes"]) == 49
+    assert "Zq-7jLNq0o8" not in {item["youtubeId"] for item in feed["episodes"]}
+
+
+def test_main_uses_current_feed_as_prior_enrichment(tmp_path: Path, monkeypatch):
+    current = {"channelUrl": CHANNEL_URL, "episodes": [{"youtubeId": "current", "title": "Current"}]}
+    backup = {"channelUrl": CHANNEL_URL, "episodes": [{"youtubeId": "backup", "title": "Backup"}]}
+    (tmp_path / "feed.json").write_text(json.dumps(current), encoding="utf-8")
+    (tmp_path / "feed.previous.json").write_text(json.dumps(backup), encoding="utf-8")
+    captured = {}
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(sys, "argv", ["generator.py"])
+    monkeypatch.setattr(generator, "retrieve_entries", lambda *args: captured.setdefault("prior", args[3]) or {"channelUrl": CHANNEL_URL, "episodes": []})
+    monkeypatch.setattr(generator, "write_feed_atomically", lambda *args: None)
+    generator.main()
+    assert captured["prior"] == current
+
+
+def test_main_propagates_no_trustworthy_date_failure(tmp_path: Path, monkeypatch):
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setattr(sys, "argv", ["generator.py"])
+    monkeypatch.setattr(generator, "retrieve_entries", lambda *args: (_ for _ in ()).throw(RuntimeError("no trustworthy date")))
+    with pytest.raises(RuntimeError, match="no trustworthy date"):
+        generator.main()
 
 
 def test_list_title_equals_episode_title():

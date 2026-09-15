@@ -2,52 +2,44 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
-      "youtubeId": "wuBMtWmMLOk",
-      "date": "2026-09-11",
-      "title": "Edgar Kozak Live set | Endorfin Open Air Buddha. 14.08.2026",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi/wuBMtWmMLOk/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
-    },
-    {
       "youtubeId": "gcPFb5iqPzc",
       "date": "2026-09-10",
-      "title": "Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek? I Vita Solo, Lelde Matroze",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi_webp/gcPFb5iqPzc/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "title": "Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek?",
+      "guests": "Vita Solo, Lelde Matroze",
+      "thumb": "https://i4.ytimg.com/vi/gcPFb5iqPzc/hqdefault.jpg",
+      "listTitle": "Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek?"
     },
     {
       "youtubeId": "rnNzAwAWaY4",
       "date": "2026-09-03",
-      "title": "Kāpēc seksuālās brīvības laikmetā mēs kļūstam arvien vientuļāki? I Juris Grave un Rita Grīnberga",
-      "guests": "",
+      "title": "Kāpēc seksuālās brīvības laikmetā mēs kļūstam arvien vientuļāki?",
+      "guests": "Juris Grave un Rita Grīnberga",
       "thumb": "https://i.ytimg.com/vi_webp/rnNzAwAWaY4/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc seksuālās brīvības laikmetā mēs kļūstam arvien vientuļāki?"
     },
     {
       "youtubeId": "G_G6BRe9l9E",
       "date": "2026-08-27",
-      "title": "40 skolotāji piecēlās pret vienu skolnieku! Šodien pasaule mācās no viņa | Raimonds Elbakjans",
-      "guests": "",
+      "title": "40 skolotāji piecēlās pret vienu skolnieku! Šodien pasaule mācās no viņa",
+      "guests": "Raimonds Elbakjans",
       "thumb": "https://i.ytimg.com/vi_webp/G_G6BRe9l9E/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "40 skolotāji piecēlās pret vienu skolnieku! Šodien pasaule mācās no viņa"
     },
     {
       "youtubeId": "CqAiWqPJMuw",
       "date": "2026-08-20",
-      "title": "Kāpēc uz priekšnieku un partneri joprojām reaģētavs iekšējais bērns. Irīna Bērziņa",
-      "guests": "",
+      "title": "Kāpēc uz priekšnieku un partneri joprojām reaģētavs iekšējais bērns.",
+      "guests": "Irīna Bērziņa",
       "thumb": "https://i.ytimg.com/vi_webp/CqAiWqPJMuw/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc uz priekšnieku un partneri joprojām reaģētavs iekšējais bērns."
     },
     {
       "youtubeId": "HuS6KKg_Fx8",
       "date": "2026-08-13",
-      "title": "Vai smiekli un rūdīšanās izmainīs tavu dzīvi. Artūrs Laimīgais, Māris Žunda",
-      "guests": "",
+      "title": "Vai smiekli un rūdīšanās izmainīs tavu dzīvi.",
+      "guests": "Artūrs Laimīgais, Māris Žunda",
       "thumb": "https://i.ytimg.com/vi/HuS6KKg_Fx8/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Vai smiekli un rūdīšanās izmainīs tavu dzīvi."
     },
     {
       "youtubeId": "Yssxqzi-IAc",
@@ -55,7 +47,7 @@
       "title": "Izpratne viena pati vēl nespēj mainīt tavu dzīvi. Lāsma Liepiņa, Ieva.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/Yssxqzi-IAc/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Izpratne viena pati vēl nespēj mainīt tavu dzīvi. Lāsma Liepiņa, Ieva."
     },
     {
       "youtubeId": "oyUViEwm8UY",
@@ -63,7 +55,7 @@
       "title": "Tu vari apmānīt citus, bet ķermeni apmānīt nevar! Elīna Everte un Ģirts Laube.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/oyUViEwm8UY/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Tu vari apmānīt citus, bet ķermeni apmānīt nevar! Elīna Everte un Ģirts Laube."
     },
     {
       "youtubeId": "bcvzUXrgMfU",
@@ -71,7 +63,7 @@
       "title": "Kāpēc Tava dzīve neatbilst cilvēkam, par kuru sevi uzskati? Liene Uresina.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/bcvzUXrgMfU/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc Tava dzīve neatbilst cilvēkam, par kuru sevi uzskati? Liene Uresina."
     },
     {
       "youtubeId": "x-mhyx-u8kg",
@@ -79,15 +71,15 @@
       "title": "Kāpēc Tavi vārdi nesakrīt ar Tavu dzīvi?",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/x-mhyx-u8kg/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc Tavi vārdi nesakrīt ar Tavu dzīvi?"
     },
     {
       "youtubeId": "RtediS0EJbE",
       "date": "2026-07-16",
-      "title": "Kā soc.tīkli maina Tavu pašvērtību, spēju izbaudīt mirkli un domāšanu. Līva Goba un Edgars Fresh.",
-      "guests": "",
+      "title": "Kā soc.tīkli maina Tavu pašvērtību, spēju izbaudīt mirkli un domāšanu.",
+      "guests": "Līva Goba un Edgars Fresh.",
       "thumb": "https://i.ytimg.com/vi/RtediS0EJbE/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kā soc.tīkli maina Tavu pašvērtību, spēju izbaudīt mirkli un domāšanu."
     },
     {
       "youtubeId": "cEXQrbvm3tQ",
@@ -95,7 +87,7 @@
       "title": "Kāpēc mēs tik bieži kļūdāmies cilvēkos? Darija Krastiņa, Zane Milzarāja.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/cEXQrbvm3tQ/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc mēs tik bieži kļūdāmies cilvēkos? Darija Krastiņa, Zane Milzarāja."
     },
     {
       "youtubeId": "T71wdtW4Iy8",
@@ -103,7 +95,7 @@
       "title": "Iemesli, kāpēc Tev pastāvīgi nav spēka! Kur pazūd Tava enerģija?Pauls Pujats, Karina Avanesova.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/T71wdtW4Iy8/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Iemesli, kāpēc Tev pastāvīgi nav spēka! Kur pazūd Tava enerģija?Pauls Pujats, Karina Avanesova."
     },
     {
       "youtubeId": "XXka0f5_1Y0",
@@ -111,7 +103,7 @@
       "title": "13 sarkanie karodziņi attiecībās, kurus cilvēki pamana pārāk vēlu.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/XXka0f5_1Y0/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "13 sarkanie karodziņi attiecībās, kurus cilvēki pamana pārāk vēlu."
     },
     {
       "youtubeId": "JXV7Z07Xr1o",
@@ -119,7 +111,7 @@
       "title": "Viens ieradums, kas parāda, vai tu kļūsi par miljonāru vai paliksi uz vietas.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/JXV7Z07Xr1o/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Viens ieradums, kas parāda, vai tu kļūsi par miljonāru vai paliksi uz vietas."
     },
     {
       "youtubeId": "iObSI8WU4lE",
@@ -127,7 +119,7 @@
       "title": "Kāpēc nauda, statuss un uzvara ne vienmēr dod piepildījumu?Jānis Bērziņš, Kaspars Peregudovs.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/iObSI8WU4lE/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc nauda, statuss un uzvara ne vienmēr dod piepildījumu?Jānis Bērziņš, Kaspars Peregudovs."
     },
     {
       "youtubeId": "bjM8k817Rx0",
@@ -135,7 +127,7 @@
       "title": "Kāpēc bērni tik spēcīgi atklāj mūsu emocijas un vājās vietas? Simona Dimanta, Svetlana Bikšus.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/bjM8k817Rx0/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc bērni tik spēcīgi atklāj mūsu emocijas un vājās vietas? Simona Dimanta, Svetlana Bikšus."
     },
     {
       "youtubeId": "5TFROuuMWZE",
@@ -143,15 +135,15 @@
       "title": "Vai bērnības traumas paliek uz mūžu? Saruna par dziedināšanu, maskām un patieso brīvību.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/5TFROuuMWZE/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Vai bērnības traumas paliek uz mūžu? Saruna par dziedināšanu, maskām un patieso brīvību."
     },
     {
       "youtubeId": "rsvTl2h3TXk",
       "date": "2026-05-21",
-      "title": "Kā vecāku sāpes kļūst par taviem ieradumiem un bailēm. Jānis Brūns, Juris Pitkēvičs.",
-      "guests": "",
+      "title": "Kā vecāku sāpes kļūst par taviem ieradumiem un bailēm.",
+      "guests": "Jānis Brūns, Juris Pitkēvičs.",
       "thumb": "https://i.ytimg.com/vi/rsvTl2h3TXk/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kā vecāku sāpes kļūst par taviem ieradumiem un bailēm."
     },
     {
       "youtubeId": "XR3843F6jxY",
@@ -159,7 +151,7 @@
       "title": "Kāpēc Attiecības Aktivizē Tavas Traumas? Rolands Čerņis, Toms Zaķevics.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/XR3843F6jxY/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc Attiecības Aktivizē Tavas Traumas? Rolands Čerņis, Toms Zaķevics."
     },
     {
       "youtubeId": "296FFfG0YXE",
@@ -167,7 +159,7 @@
       "title": "Kāpēc tu vēl neesi realizējis savu potenciālu? Edgars Kozaks",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/296FFfG0YXE/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc tu vēl neesi realizējis savu potenciālu? Edgars Kozaks"
     },
     {
       "youtubeId": "rTR3_Dp3IVc",
@@ -175,15 +167,15 @@
       "title": "Kāpēc dēli nekļūst par vīriešiem un meitas izvēlas nepareizos vīriešus? Uģis Kuģis, Artūrs Ķirps",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/rTR3_Dp3IVc/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc dēli nekļūst par vīriešiem un meitas izvēlas nepareizos vīriešus? Uģis Kuģis, Artūrs Ķirps"
     },
     {
       "youtubeId": "cCKxbjwO1Uc",
       "date": "2026-04-30",
-      "title": "Mīlestība, kuru Tu meklē citos, sākas ar tevi. Nika Todavčiča, Sandra Sondore.",
-      "guests": "",
+      "title": "Mīlestība, kuru Tu meklē citos, sākas ar tevi.",
+      "guests": "Nika Todavčiča, Sandra Sondore.",
       "thumb": "https://i.ytimg.com/vi/cCKxbjwO1Uc/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Mīlestība, kuru Tu meklē citos, sākas ar tevi."
     },
     {
       "youtubeId": "PL8mr_X0JJs",
@@ -191,7 +183,7 @@
       "title": "Kāpēc pēc 40 cilvēki nemirst, bet pārstāj dzīvot.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/PL8mr_X0JJs/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc pēc 40 cilvēki nemirst, bet pārstāj dzīvot."
     },
     {
       "youtubeId": "kDkBRJWVtZc",
@@ -199,7 +191,7 @@
       "title": "Kāpēc tu jūties slikti, pat ja dzīvē \"viss ir kārtībā\"? Aksels Cīrulis, Mārtiņš Baranovskis.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/kDkBRJWVtZc/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc tu jūties slikti, pat ja dzīvē \"viss ir kārtībā\"? Aksels Cīrulis, Mārtiņš Baranovskis."
     },
     {
       "youtubeId": "g1jjRMcnPfw",
@@ -207,7 +199,7 @@
       "title": "Kāpēc lielākā daļa cilvēku nekad nekļūst bagāti? Valters Vestmanis.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/g1jjRMcnPfw/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc lielākā daļa cilvēku nekad nekļūst bagāti? Valters Vestmanis."
     },
     {
       "youtubeId": "PtEo3Zcdh7s",
@@ -215,7 +207,7 @@
       "title": "Kā saprast, ka vairs nedrīkst palikt pa vecam.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/PtEo3Zcdh7s/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kā saprast, ka vairs nedrīkst palikt pa vecam."
     },
     {
       "youtubeId": "O1kWhCSIvdU",
@@ -223,23 +215,23 @@
       "title": "Veiksme nav talants - tā ir sistēma.Toms Jurjevs",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/O1kWhCSIvdU/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Veiksme nav talants - tā ir sistēma.Toms Jurjevs"
     },
     {
       "youtubeId": "iRTtAgjNzd4",
       "date": "2026-03-25",
-      "title": "Kāpēc Tu pievelc tos, kas tevi sāpina. Ernests Pūliņš Cinis, Agnese Cīrule.",
-      "guests": "",
+      "title": "Kāpēc Tu pievelc tos, kas tevi sāpina.",
+      "guests": "Ernests Pūliņš Cinis, Agnese Cīrule.",
       "thumb": "https://i.ytimg.com/vi/iRTtAgjNzd4/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc Tu pievelc tos, kas tevi sāpina."
     },
     {
       "youtubeId": "vgedg_zGDsI",
       "date": "2026-03-18",
-      "title": "Nauda nestrādā tā, kā Tev ir mācīts. Reinis Bērziņš.",
-      "guests": "",
+      "title": "Nauda nestrādā tā, kā Tev ir mācīts.",
+      "guests": "Reinis Bērziņš.",
       "thumb": "https://i.ytimg.com/vi/vgedg_zGDsI/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Nauda nestrādā tā, kā Tev ir mācīts."
     },
     {
       "youtubeId": "N4tLKaublWo",
@@ -247,7 +239,7 @@
       "title": "Kāpēc Tavs partneris ir tik līdzīgs Tavam tēvam vai mātei?",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/N4tLKaublWo/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc Tavs partneris ir tik līdzīgs Tavam tēvam vai mātei?"
     },
     {
       "youtubeId": "LqksEdpsZgM",
@@ -255,7 +247,7 @@
       "title": "Kad Tu tiešām dziedinies, un kad vienkārši bēdz no savas dzīves? Ramona Vītola, Olita Supe",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/LqksEdpsZgM/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kad Tu tiešām dziedinies, un kad vienkārši bēdz no savas dzīves? Ramona Vītola, Olita Supe"
     },
     {
       "youtubeId": "pP0HRliQnew",
@@ -263,7 +255,7 @@
       "title": "Kas palīdz dzīvot ilgāk un veselīgāk 21. gadsimtā? Zane Rēvalde, Toms Ābele.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/pP0HRliQnew/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kas palīdz dzīvot ilgāk un veselīgāk 21. gadsimtā? Zane Rēvalde, Toms Ābele."
     },
     {
       "youtubeId": "sUggnAfF0vk",
@@ -271,7 +263,7 @@
       "title": "Kāpēc cilvēki, kuriem ir viss, joprojām ir nelaimīgi? Arturs Kostins.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/sUggnAfF0vk/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc cilvēki, kuriem ir viss, joprojām ir nelaimīgi? Arturs Kostins."
     },
     {
       "youtubeId": "lklxIJY7Qvk",
@@ -279,31 +271,31 @@
       "title": "Kāpēc mēs atkal un atkal pievelkam viena tipa partnerus?Anna Petrikina, Laura Šeine Siliņa.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/lklxIJY7Qvk/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc mēs atkal un atkal pievelkam viena tipa partnerus?Anna Petrikina, Laura Šeine Siliņa."
     },
     {
       "youtubeId": "Mn9vXiQfSLc",
       "date": "2026-02-11",
-      "title": "Emocionālā krāpšana sākas Instagamā. Kristaps Ozoliņš, Kristīne Kreile.",
-      "guests": "",
+      "title": "Emocionālā krāpšana sākas Instagamā.",
+      "guests": "Kristaps Ozoliņš, Kristīne Kreile.",
       "thumb": "https://i.ytimg.com/vi/Mn9vXiQfSLc/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Emocionālā krāpšana sākas Instagamā."
     },
     {
       "youtubeId": "NcZualQactk",
       "date": "2026-02-04",
-      "title": "Kas padara cilvēkus nelaimīgus?! EGO. Rolands Černis, Kaspars Zlidnis.",
-      "guests": "",
+      "title": "Kas padara cilvēkus nelaimīgus?! EGO.",
+      "guests": "Rolands Černis, Kaspars Zlidnis.",
       "thumb": "https://i.ytimg.com/vi/NcZualQactk/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kas padara cilvēkus nelaimīgus?! EGO."
     },
     {
       "youtubeId": "VyiRuT7qRPg",
       "date": "2026-01-28",
-      "title": "Klikšķis, kas var tev izmaksāt visu. Dana Ludviga, Kārlis Apalups.",
-      "guests": "",
+      "title": "Klikšķis, kas var tev izmaksāt visu.",
+      "guests": "Dana Ludviga, Kārlis Apalups.",
       "thumb": "https://i.ytimg.com/vi/VyiRuT7qRPg/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Klikšķis, kas var tev izmaksāt visu."
     },
     {
       "youtubeId": "yEcRWK5V5yE",
@@ -311,7 +303,7 @@
       "title": "Personīgais zīmols: vai tu pārdod sevi vai savu dvēseli? Elīna Didrihsone",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/yEcRWK5V5yE/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Personīgais zīmols: vai tu pārdod sevi vai savu dvēseli? Elīna Didrihsone"
     },
     {
       "youtubeId": "dj-yVAPlzTM",
@@ -319,7 +311,7 @@
       "title": "Vai bērns var būt veiksmīgs dzīvē bez izglītības?",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/dj-yVAPlzTM/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Vai bērns var būt veiksmīgs dzīvē bez izglītības?"
     },
     {
       "youtubeId": "W3PlHB86-_E",
@@ -327,7 +319,7 @@
       "title": "Lielākā afēra 21. gs",
       "guests": "KRIPTOVALŪTA. Mārtiņš Beņķītis.",
       "thumb": "https://i.ytimg.com/vi/W3PlHB86-_E/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Lielākā afēra 21. gs"
     },
     {
       "youtubeId": "ekTkbZ8SO2c",
@@ -335,7 +327,7 @@
       "title": "VISI NEVAR BŪT UZŅĒMĒJI, Jānis Stabiņš.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/ekTkbZ8SO2c/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "VISI NEVAR BŪT UZŅĒMĒJI, Jānis Stabiņš."
     },
     {
       "youtubeId": "anvsqSPGqmk",
@@ -343,7 +335,7 @@
       "title": "NOSKATIES ŠO, JA GRIBI PADARĪT 2026. GADU PAR SAVAS DZĪVES LABĀKO GADU.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/anvsqSPGqmk/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "NOSKATIES ŠO, JA GRIBI PADARĪT 2026. GADU PAR SAVAS DZĪVES LABĀKO GADU."
     },
     {
       "youtubeId": "GXTHE8RX-EY",
@@ -351,7 +343,7 @@
       "title": "Partneris TEVI NEPADARĪS laimīgu! Uģis Kuģis, Elīna Latkovska.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/GXTHE8RX-EY/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Partneris TEVI NEPADARĪS laimīgu! Uģis Kuģis, Elīna Latkovska."
     },
     {
       "youtubeId": "FiY0P0vBbUg",
@@ -359,15 +351,15 @@
       "title": "Kāpēc gudri cilvēki joprojām nesasniedz savus mērķus?",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/FiY0P0vBbUg/maxresdefault.webp",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Kāpēc gudri cilvēki joprojām nesasniedz savus mērķus?"
     },
     {
       "youtubeId": "RqgGF9QMy8A",
       "date": "2025-12-10",
-      "title": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni. Kristīne Lūsiņa, Jana Briede.",
-      "guests": "",
+      "title": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni.",
+      "guests": "Kristīne Lūsiņa, Jana Briede.",
       "thumb": "https://i.ytimg.com/vi/RqgGF9QMy8A/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni."
     },
     {
       "youtubeId": "3BAuap6xlgU",
@@ -375,7 +367,7 @@
       "title": "Robeža starp dziedinošu pieredzi un bīstamu eksperimentēšanu ar psihodēliju.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/3BAuap6xlgU/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Robeža starp dziedinošu pieredzi un bīstamu eksperimentēšanu ar psihodēliju."
     },
     {
       "youtubeId": "jXnFXjws85A",
@@ -383,7 +375,7 @@
       "title": "Pašpietiekama sieviete 21.gs brīvība vai illūzija? Nadja Kraukle, Elīna Divine.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/jXnFXjws85A/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Pašpietiekama sieviete 21.gs brīvība vai illūzija? Nadja Kraukle, Elīna Divine."
     },
     {
       "youtubeId": "srt3i6ymM8M",
@@ -391,15 +383,15 @@
       "title": "Samanta Tīna: Kā es atklāju savas saknes un pārvarēju šaubas.",
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/srt3i6ymM8M/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Samanta Tīna: Kā es atklāju savas saknes un pārvarēju šaubas."
     },
     {
       "youtubeId": "Fqtz0Ua572E",
       "date": "2025-11-12",
-      "title": "Astroloģija - robeža starp apmuļķošanu un atbloķēšanu. Inga Mekšūna, Sandra Reščenko.",
-      "guests": "",
+      "title": "Astroloģija - robeža starp apmuļķošanu un atbloķēšanu.",
+      "guests": "Inga Mekšūna, Sandra Reščenko.",
       "thumb": "https://i.ytimg.com/vi/Fqtz0Ua572E/maxresdefault.jpg",
-      "listTitle": "Endorfin Podcast"
+      "listTitle": "Astroloģija - robeža starp apmuļķošanu un atbloķēšanu."
     }
   ]
 }
