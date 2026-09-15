@@ -9,6 +9,8 @@ import re
 import shutil
 import subprocess
 import tempfile
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -58,7 +60,7 @@ def build_feed(channel_url: str, entries: list[dict[str, Any]], excluded_playlis
         duration = item.get("duration")
         if not video_id or item.get("playlist_id") == excluded_playlist_id:
             continue
-        if "/shorts/" in webpage_url or (duration is not None and duration <= 180):
+        if "/shorts/" in webpage_url or "#shorts" in str(item.get("title") or "").lower() or (duration is not None and duration <= 180):
             continue
         clean_title, guests = parse_title(str(item.get("title") or ""))
         episodes.append({
@@ -107,17 +109,33 @@ def _yt_json(url: str, yt_dlp: str = "yt-dlp") -> dict[str, Any]:
 
 
 def retrieve_entries(channel_url: str, excluded_playlist_id: str, yt_dlp: str = "yt-dlp") -> list[dict[str, Any]]:
-    channel = _yt_json(channel_url, yt_dlp)
-    excluded = _yt_json(f"https://www.youtube.com/playlist?list={excluded_playlist_id}", yt_dlp)
-    excluded_ids = {x.get("id") for x in excluded.get("entries", []) if x.get("id")}
+    # YouTube's channel RSS is public and works from GitHub Actions, where
+    # watch-page extraction is frequently bot-blocked. It supplies the
+    # authoritative publication date and recent episode metadata.
+    feed_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
+    request = urllib.request.Request(feed_url, headers={"User-Agent": "endorfin-podcast-feed/1.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        root = ET.fromstring(response.read())
+    ns = {"atom": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015", "media": "http://search.yahoo.com/mrss/"}
     results = []
-    for flat in channel.get("entries", []):
-        video_id = flat.get("id")
-        if not video_id or video_id in excluded_ids:
-            continue
-        metadata = _yt_json(f"https://www.youtube.com/watch?v={video_id}", yt_dlp)
-        metadata["playlist_id"] = ""
-        results.append(metadata)
+    for entry in root.findall("atom:entry", ns):
+        video_id = entry.findtext("yt:videoId", namespaces=ns)
+        title = entry.findtext("atom:title", namespaces=ns) or ""
+        published = entry.findtext("atom:published", namespaces=ns) or ""
+        if not video_id or not published:
+            raise RuntimeError("channel RSS entry missing video ID or publication date")
+        thumb = entry.find("media:group/media:thumbnail", ns)
+        results.append({
+            "id": video_id,
+            "upload_date": published[:10],
+            "title": title,
+            "duration": None,
+            "webpage_url": f"https://www.youtube.com/watch?v={video_id}",
+            "thumbnail": thumb.attrib.get("url", "") if thumb is not None else f"https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg",
+            "playlist_id": "",
+        })
+    if not results:
+        raise RuntimeError("channel RSS returned no entries")
     return results
 
 

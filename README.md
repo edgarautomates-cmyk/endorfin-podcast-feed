@@ -4,11 +4,7 @@ This repository publishes the podcast feed consumed by edgarkozak.com:
 
 https://edgarautomates-cmyk.github.io/endorfin-podcast-feed/feed.json
 
-The generator reads the Endorfin YouTube channel, excludes playlist
-`PL758Jqgz2qfiE9O7F4ONeG8GBr8-RwruO`, excludes Shorts, and emits up to 50
-long-form episodes newest first. Titles are split into `title` and `guests`
-only for deterministic high-confidence markers such as `with`, `feat.`, or a
-clear dash suffix; uncertain guests remain blank.
+The generator reads the Endorfin channel's public YouTube RSS feed (with yt-dlp retained as the supported metadata tool for local extensions), excludes the configured music playlist whenever playlist metadata identifies it, excludes Shorts, and emits up to 50 long-form episodes newest first. Titles are split into `title` and `guests` only for deterministic high-confidence markers such as `with`, `feat.`, or a clear dash suffix; uncertain guests remain blank.
 
 ## Operations
 
