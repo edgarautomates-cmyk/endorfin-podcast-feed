@@ -1,0 +1,10 @@
+[project]
+name = "endorfin-podcast-feed"
+version = "1.0.0"
+description = "Durable YouTube-to-podcast JSON feed generator"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
