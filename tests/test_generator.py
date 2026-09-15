@@ -6,6 +6,7 @@ import pytest
 
 from generator import (
     build_feed,
+    merge_entries,
     parse_title,
     validate_feed,
     write_feed_atomically,
@@ -35,6 +36,45 @@ def test_build_feed_excludes_shorts_and_music_playlist_and_sorts_newest():
     feed = build_feed(CHANNEL_URL, entries, PLAYLIST_ID)
     assert [e["youtubeId"] for e in feed["episodes"]] == ["new", "old"]
     assert feed["episodes"][0]["thumb"].startswith("https://")
+
+
+def test_rss_only_shorts_are_not_an_episode_universe():
+    videos = [{"id": "podcast", "title": "Podcast", "upload_date": "20240101"}]
+    rss = [
+        {"id": "podcast", "title": "Podcast", "upload_date": "20240101"},
+        {"id": "rss-short", "title": "Short", "upload_date": "20250101", "webpage_url": "https://youtube.com/shorts/rss-short"},
+    ]
+    feed = merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, rss, set(), PLAYLIST_ID)
+    assert [item["youtubeId"] for item in feed["episodes"]] == ["podcast"]
+
+
+def test_videos_tab_items_are_kept_even_when_rss_does_not_list_them():
+    videos = [{"id": "tab-item", "title": "Tab item", "upload_date": "20240101"}]
+    feed = merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID)
+    assert feed["episodes"][0]["youtubeId"] == "tab-item"
+
+
+def test_live_set_is_excluded_without_playlist_lookup():
+    videos = [
+        {"id": "music", "title": "Edgar Kozak Live set", "upload_date": "20240101"},
+        {"id": "podcast", "title": "Podcast", "upload_date": "20240102"},
+    ]
+    feed = merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID)
+    assert [item["youtubeId"] for item in feed["episodes"]] == ["podcast"]
+
+
+def test_undateable_new_videos_tab_item_fails_closed():
+    videos = [{"id": "new", "title": "New item"}]
+    with pytest.raises(RuntimeError, match="trustworthy date"):
+        merge_entries(videos, {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID)
+
+
+def test_list_title_equals_episode_title():
+    feed = merge_entries(
+        [{"id": "one", "title": "Podcast with Guest", "upload_date": "20240101"}],
+        {"channelUrl": CHANNEL_URL, "episodes": []}, [], set(), PLAYLIST_ID,
+    )
+    assert feed["episodes"][0]["listTitle"] == feed["episodes"][0]["title"]
 
 
 def test_validate_feed_rejects_bad_shape():

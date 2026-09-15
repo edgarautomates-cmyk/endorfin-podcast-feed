@@ -18,12 +18,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Install dependencies
-        run: python -m pip install --upgrade yt-dlp pytest
+      - uses: astral-sh/setup-uv@v6
       - name: Run tests
-        run: python -m pytest -q
+        run: uv run --with pytest pytest -q
       - name: Generate feed
-        run: python generator.py --output feed.json
+        run: uv run --with yt-dlp python generator.py --output feed.json
       - name: Commit changed feed
         run: |
           git config user.name 'github-actions[bot]'

@@ -4,16 +4,15 @@ This repository publishes the podcast feed consumed by edgarkozak.com:
 
 https://edgarautomates-cmyk.github.io/endorfin-podcast-feed/feed.json
 
-The generator reads the Endorfin channel's public YouTube RSS feed (with yt-dlp retained as the supported metadata tool for local extensions), excludes the configured music playlist whenever playlist metadata identifies it, excludes Shorts, and emits up to 50 long-form episodes newest first. Titles are split into `title` and `guests` only for deterministic high-confidence markers such as `with`, `feat.`, or a clear dash suffix; uncertain guests remain blank.
+The generator retrieves the `@endorfinworld/videos` tab with flat yt-dlp; that tab is the only episode universe, so RSS-only Shorts cannot enter the feed. RSS and the prior feed only provide trustworthy dates/metadata for tab entries. An undateable new tab entry fails closed. The configured music playlist is excluded when lookup works, with deterministic `live set`/`DJ set` title fallback, and up to 50 podcast videos are emitted newest first. Titles are split into `title` and `guests` only for deterministic high-confidence markers such as `with`, `feat.`, or a clear dash suffix; `listTitle` always equals the resulting episode title.
 
 ## Operations
 
 Run locally with Python and yt-dlp:
 
 ```text
-python -m pip install yt-dlp pytest
-python -m pytest -q
-python generator.py --output feed.json
+uv run --with pytest pytest -q
+uv run --with yt-dlp python generator.py --output feed.json
 ```
 
 The weekly GitHub Actions workflow runs Mondays at 04:17 UTC and can also be
