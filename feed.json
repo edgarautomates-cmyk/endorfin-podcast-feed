@@ -2,6 +2,14 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "Kie4o0RbQVQ",
+      "date": "2026-09-17",
+      "title": "Kā attiecībās atšķirt veselīgas robežas no manipulācijas",
+      "guests": "Kristīne Devi, Juta Belecka",
+      "thumb": "https://i4.ytimg.com/vi/Kie4o0RbQVQ/hqdefault.jpg",
+      "listTitle": "Kā attiecībās atšķirt veselīgas robežas no manipulācijas"
+    },
+    {
       "youtubeId": "gcPFb5iqPzc",
       "date": "2026-09-10",
       "title": "Pelnām vairāk, bet jūtamies nabadzīgāki. Kāpēc tā notiek?",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/srt3i6ymM8M/maxresdefault.jpg",
       "listTitle": "Samanta Tīna: Kā es atklāju savas saknes un pārvarēju šaubas."
-    },
-    {
-      "youtubeId": "Fqtz0Ua572E",
-      "date": "2025-11-12",
-      "title": "Astroloģija - robeža starp apmuļķošanu un atbloķēšanu.",
-      "guests": "Inga Mekšūna, Sandra Reščenko",
-      "thumb": "https://i.ytimg.com/vi/Fqtz0Ua572E/maxresdefault.jpg",
-      "listTitle": "Astroloģija - robeža starp apmuļķošanu un atbloķēšanu."
     }
   ]
 }
