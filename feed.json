@@ -2,6 +2,14 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "oHcmGCjEnw0",
+      "date": "2026-09-24",
+      "title": "Kas notiek, kad pašvērtība ir atkarīga no rezultātiem. Jānis Blūms",
+      "guests": "Olga Kazaka",
+      "thumb": "https://i4.ytimg.com/vi/oHcmGCjEnw0/hqdefault.jpg",
+      "listTitle": "Kas notiek, kad pašvērtība ir atkarīga no rezultātiem. Jānis Blūms"
+    },
+    {
       "youtubeId": "Kie4o0RbQVQ",
       "date": "2026-09-17",
       "title": "Kā attiecībās atšķirt veselīgas robežas no manipulācijas",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/jXnFXjws85A/maxresdefault.jpg",
       "listTitle": "Pašpietiekama sieviete 21.gs brīvība vai illūzija? Nadja Kraukle, Elīna Divine."
-    },
-    {
-      "youtubeId": "srt3i6ymM8M",
-      "date": "2025-11-19",
-      "title": "Samanta Tīna: Kā es atklāju savas saknes un pārvarēju šaubas.",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi/srt3i6ymM8M/maxresdefault.jpg",
-      "listTitle": "Samanta Tīna: Kā es atklāju savas saknes un pārvarēju šaubas."
     }
   ]
 }
