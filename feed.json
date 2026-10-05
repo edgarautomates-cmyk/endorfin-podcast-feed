@@ -2,6 +2,14 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "f7Z3MiSsRwA",
+      "date": "2026-10-01",
+      "title": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis",
+      "guests": "Mārtiņš Mičulis.",
+      "thumb": "https://i3.ytimg.com/vi/f7Z3MiSsRwA/hqdefault.jpg",
+      "listTitle": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis"
+    },
+    {
       "youtubeId": "oHcmGCjEnw0",
       "date": "2026-09-24",
       "title": "Kas notiek, kad pašvērtība ir atkarīga no rezultātiem. Jānis Blūms",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/3BAuap6xlgU/maxresdefault.jpg",
       "listTitle": "Robeža starp dziedinošu pieredzi un bīstamu eksperimentēšanu ar psihodēliju."
-    },
-    {
-      "youtubeId": "jXnFXjws85A",
-      "date": "2025-11-26",
-      "title": "Pašpietiekama sieviete 21.gs brīvība vai illūzija? Nadja Kraukle, Elīna Divine.",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi/jXnFXjws85A/maxresdefault.jpg",
-      "listTitle": "Pašpietiekama sieviete 21.gs brīvība vai illūzija? Nadja Kraukle, Elīna Divine."
     }
   ]
 }
