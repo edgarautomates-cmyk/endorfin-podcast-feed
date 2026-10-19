@@ -2,6 +2,14 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "1MMbYhfSStM",
+      "date": "2026-10-15",
+      "title": "Kāpēc vieni pēc grūtībām salūzt, bet citi kļūst stiprāki! Edijs Naumanis",
+      "guests": "Kristīne Liepiņa",
+      "thumb": "https://i2.ytimg.com/vi/1MMbYhfSStM/hqdefault.jpg",
+      "listTitle": "Kāpēc vieni pēc grūtībām salūzt, bet citi kļūst stiprāki! Edijs Naumanis"
+    },
+    {
       "youtubeId": "iPE1bMV1BN4",
       "date": "2026-10-08",
       "title": "Kā atšķirt īstu ekspertu no skaista profila? Liene Vizule un Elīna Dubulte par personīgo zīmolu.",
@@ -12,10 +20,10 @@
     {
       "youtubeId": "f7Z3MiSsRwA",
       "date": "2026-10-01",
-      "title": "Ēst govis vai to, ko ēd govis lai dzīvotu ilgāk? Pēteris Valdmanis",
+      "title": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis",
       "guests": "Mārtiņš Mičulis.",
       "thumb": "https://i3.ytimg.com/vi/f7Z3MiSsRwA/hqdefault.jpg",
-      "listTitle": "Ēst govis vai to, ko ēd govis lai dzīvotu ilgāk? Pēteris Valdmanis"
+      "listTitle": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis"
     },
     {
       "youtubeId": "oHcmGCjEnw0",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi_webp/FiY0P0vBbUg/maxresdefault.webp",
       "listTitle": "Kāpēc gudri cilvēki joprojām nesasniedz savus mērķus?"
-    },
-    {
-      "youtubeId": "RqgGF9QMy8A",
-      "date": "2025-12-10",
-      "title": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni.",
-      "guests": "Kristīne Lūsiņa, Jana Briede",
-      "thumb": "https://i.ytimg.com/vi/RqgGF9QMy8A/maxresdefault.jpg",
-      "listTitle": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni."
     }
   ]
 }

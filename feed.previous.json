@@ -2,12 +2,20 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "iPE1bMV1BN4",
+      "date": "2026-10-08",
+      "title": "Kā atšķirt īstu ekspertu no skaista profila? Liene Vizule un Elīna Dubulte par personīgo zīmolu.",
+      "guests": "",
+      "thumb": "https://i2.ytimg.com/vi/iPE1bMV1BN4/hqdefault.jpg",
+      "listTitle": "Kā atšķirt īstu ekspertu no skaista profila? Liene Vizule un Elīna Dubulte par personīgo zīmolu."
+    },
+    {
       "youtubeId": "f7Z3MiSsRwA",
       "date": "2026-10-01",
-      "title": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis",
+      "title": "Ēst govis vai to, ko ēd govis lai dzīvotu ilgāk? Pēteris Valdmanis",
       "guests": "Mārtiņš Mičulis.",
       "thumb": "https://i3.ytimg.com/vi/f7Z3MiSsRwA/hqdefault.jpg",
-      "listTitle": "Ko mainīt uzturā jau rīt, lai dzīvotu ilgāk un veselīgāk? Pēteris Valdmanis"
+      "listTitle": "Ēst govis vai to, ko ēd govis lai dzīvotu ilgāk? Pēteris Valdmanis"
     },
     {
       "youtubeId": "oHcmGCjEnw0",
@@ -384,14 +392,6 @@
       "guests": "Kristīne Lūsiņa, Jana Briede",
       "thumb": "https://i.ytimg.com/vi/RqgGF9QMy8A/maxresdefault.jpg",
       "listTitle": "Pieaugušā ķermenī dzīvo emocionāli nenobrieduši bērni."
-    },
-    {
-      "youtubeId": "3BAuap6xlgU",
-      "date": "2025-12-03",
-      "title": "Robeža starp dziedinošu pieredzi un bīstamu eksperimentēšanu ar psihodēliju.",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi/3BAuap6xlgU/maxresdefault.jpg",
-      "listTitle": "Robeža starp dziedinošu pieredzi un bīstamu eksperimentēšanu ar psihodēliju."
     }
   ]
 }
