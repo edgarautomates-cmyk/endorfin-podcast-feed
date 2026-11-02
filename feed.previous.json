@@ -2,6 +2,14 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "W8uJjgRqM-g",
+      "date": "2026-10-22",
+      "title": "Vitamīni, biohakings un tehnoloģijas: vai tie pagarina dzīvi?",
+      "guests": "Dita Krūmberga, Kaspars Vendelis",
+      "thumb": "https://i4.ytimg.com/vi/W8uJjgRqM-g/hqdefault.jpg",
+      "listTitle": "Vitamīni, biohakings un tehnoloģijas: vai tie pagarina dzīvi?"
+    },
+    {
       "youtubeId": "1MMbYhfSStM",
       "date": "2026-10-15",
       "title": "Kāpēc vieni pēc grūtībām salūzt, bet citi kļūst stiprāki! Edijs Naumanis",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/GXTHE8RX-EY/maxresdefault.jpg",
       "listTitle": "Partneris TEVI NEPADARĪS laimīgu! Uģis Kuģis, Elīna Latkovska."
-    },
-    {
-      "youtubeId": "FiY0P0vBbUg",
-      "date": "2025-12-13",
-      "title": "Kāpēc gudri cilvēki joprojām nesasniedz savus mērķus?",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi_webp/FiY0P0vBbUg/maxresdefault.webp",
-      "listTitle": "Kāpēc gudri cilvēki joprojām nesasniedz savus mērķus?"
     }
   ]
 }

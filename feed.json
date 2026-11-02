@@ -2,12 +2,20 @@
   "channelUrl": "https://www.youtube.com/@endorfinworld/videos",
   "episodes": [
     {
+      "youtubeId": "B7BUGj-yui0",
+      "date": "2026-10-29",
+      "title": "Mairis Briedis: Grūtākā cīņa nav ringā! | Ego, zaudējumi un patiesais spēks.",
+      "guests": "",
+      "thumb": "https://i3.ytimg.com/vi/B7BUGj-yui0/hqdefault.jpg",
+      "listTitle": "Mairis Briedis: Grūtākā cīņa nav ringā! | Ego, zaudējumi un patiesais spēks."
+    },
+    {
       "youtubeId": "W8uJjgRqM-g",
       "date": "2026-10-22",
-      "title": "Vitamīni, biohakings un tehnoloģijas: vai tie pagarina dzīvi?",
-      "guests": "Dita Krūmberga, Kaspars Vendelis",
+      "title": "Veselības bizness: kur beidzas palīdzība un sākas peļņa uz bailēm?Dita Krūmberga",
+      "guests": "Kaspars Vendelis",
       "thumb": "https://i4.ytimg.com/vi/W8uJjgRqM-g/hqdefault.jpg",
-      "listTitle": "Vitamīni, biohakings un tehnoloģijas: vai tie pagarina dzīvi?"
+      "listTitle": "Veselības bizness: kur beidzas palīdzība un sākas peļņa uz bailēm?Dita Krūmberga"
     },
     {
       "youtubeId": "1MMbYhfSStM",
@@ -384,14 +392,6 @@
       "guests": "",
       "thumb": "https://i.ytimg.com/vi/anvsqSPGqmk/maxresdefault.jpg",
       "listTitle": "NOSKATIES ŠO, JA GRIBI PADARĪT 2026. GADU PAR SAVAS DZĪVES LABĀKO GADU."
-    },
-    {
-      "youtubeId": "GXTHE8RX-EY",
-      "date": "2025-12-17",
-      "title": "Partneris TEVI NEPADARĪS laimīgu! Uģis Kuģis, Elīna Latkovska.",
-      "guests": "",
-      "thumb": "https://i.ytimg.com/vi/GXTHE8RX-EY/maxresdefault.jpg",
-      "listTitle": "Partneris TEVI NEPADARĪS laimīgu! Uģis Kuģis, Elīna Latkovska."
     }
   ]
 }
